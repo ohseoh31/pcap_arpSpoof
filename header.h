@@ -27,17 +27,3 @@ struct arp_hdr /* 28byte */
    unsigned char dst_mac[6];     /* destination Mac address 6byte*/
    struct in_addr ip_dst;     	 /* destination ip address 4byte*/
 };
-
-
-struct arp_hdr_tmp /* 28byte */
-{
-   unsigned short hardware_type; /* hardware type 2byte */
-   unsigned short proto_type;    /* protocol type 2byte */
-   u_int8_t hard_add_len;        /* hardware address length 1byte */
-   u_int8_t proto_add_len;       /* protocol address length 1byte */
-   unsigned short opcode;        /* opcode */
-   unsigned char send_mac[6];    /* sender Mac address 6byte */
-   u_int32_t ip_src;             /* sender ip address 4byte */
-   unsigned char dst_mac[6];     /* destination Mac address 6byte*/
-   u_int32_t ip_dst;     	 /* destination ip address 4byte*/
-};
