@@ -72,12 +72,8 @@ int check_ARP_Reply(pcap_t *handle,  struct ARP_Spoof *spoof_info){
 				memcpy(spoof_info->ether_dst_mac, et_h->ether_src_mac, 6);
 				return 1;	
 			}
-
     		}
-
 	}
-
-
 }
 
 
