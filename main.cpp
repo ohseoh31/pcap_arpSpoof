@@ -113,8 +113,8 @@ int main(int argc, char *argv[])
 	char broadCast[6] = {0xff,0xff,0xff,0xff,0xff,0xff};
 	memcpy(spoof_info.ether_dst_mac, broadCast , 6 );
 	memcpy(spoof_info.ether_src_mac, myMac , 6 );
-	inet_aton(argv[2], &spoof_info.ip_src);
-	inet_aton(argv[3], &spoof_info.ip_dst);	
+	inet_aton(argv[3], &spoof_info.ip_src);
+	inet_aton(argv[2], &spoof_info.ip_dst);	
 	spoof_info.opcode = htons(0x01);	
 
 	/* Send Request Packet */
