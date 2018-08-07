@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
 
 
 	/* Setting BroadCast ARP Packet */ 
-	char broadCast[6] = {0xff,0xff,0xff,0xff,0xff,0xff};
+	unsigned char broadCast[6] = {0xff,0xff,0xff,0xff,0xff,0xff};
 	memcpy(spoof_info.ether_dst_mac, broadCast , 6 );
 	memcpy(spoof_info.ether_src_mac, myMac , 6 );
 	inet_aton(argv[3], &spoof_info.ip_src);
