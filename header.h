@@ -27,3 +27,10 @@ struct arp_hdr /* 28byte */
    unsigned char dst_mac[6];     /* destination Mac address 6byte*/
    struct in_addr ip_dst;     	 /* destination ip address 4byte*/
 };
+
+
+struct eth_arp
+{
+    struct ether_h;
+    struct arp_hdr;
+};
